@@ -15,16 +15,21 @@ The [NVidia Video Loader (NVVL)](https://github.com/NVIDIA/nvvl) framework was u
 
 The pytorch implementation of the basis C3D network was derived from [David Abati](https://github.com/DavideA/c3d-pytorch)'s implementation.
 
+The Bossu implementation utilizes OpenCV v. 3.1.0
+
+### License
+
+All code is licensed under the MIT license, except for the modified NVVL code, which is subject to its own license.
 
 ### Acknowledgements
 Please cite the following paper if you use our code or dataset:
 
 ```TeX
-@InProceedings{haurum2019rain,
-  title={Is it Raining Outside? Detection of Rainfall using General-Purpose Surveillance Cameras},
-  author={Haurum, Joakim Bruslund and Bahnsen, Chris H. and Moeslund, Thomas B.},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-  month = {June},
-  year = {2019}
-}
+@InProceedings{Haurum_2019_CVPR_Workshops,
+author = {Haurum, Joakim Bruslund and Bahnsen, Chris H. and Moeslund, Thomas B.},
+title = {Is it Raining Outside? Detection of Rainfall using General-Purpose Surveillance Cameras},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+month = {June},
+year = {2019}
+} 
 ```
