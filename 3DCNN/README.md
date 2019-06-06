@@ -40,7 +40,7 @@ For the testing we simply retrun the filename and start frame, and saves the pre
 The code base allows a wide array of settings, affecting how it is run, as well as model type/depth, hyperparameters etc.
 
 ## Models
-The code currently supports the following models, shown as model [depth (if applicaple)] (implementation source). All the ResNet varations were implemented, tested and compared for action recogntion by [Hara et al.](http://openaccess.thecvf.com/content_cvpr_2018/papers/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.pdf). 
+The code currently supports the following models, shown as model [depth (if applicaple)] (implementation source).
 
 * [C3D](https://arxiv.org/pdf/1412.0767.pdf) ([Davide Abati](https://github.com/DavideA/c3d-pytorch))
 
