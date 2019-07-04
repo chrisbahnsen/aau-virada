@@ -7,7 +7,7 @@ The paper investigates rain detection with general-purpose surveillance cameras.
 As this is a collection of research code, one might find some occasional rough edges. We have tried to clean up the code to a decent level but if you encounter a bug or a regular mistake, please report it in our issue tracker. 
 
 ### The AAU Visual Rain Dataset (VIRADA)
-The evaluation code is built around the AAU VIRADA dataset which is published at [NOT YET UPLOADED](). 
+The evaluation code is built around the AAU VIRADA dataset which is published at [Dropbox](https://www.dropbox.com/sh/xayf0vxtrfrtnda/AAAmZ7jt-bG6r9pdCvlX2Z0Pa?dl=0). As of 4th of July only the Crossing1 data is available. The Crossing2 data will be available as soon as possible.
 
 ### Code references
 
