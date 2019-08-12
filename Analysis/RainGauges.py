@@ -186,6 +186,7 @@ class RainGauges(object):
 
                         if len(entries) > 1:
                             for idx in range(1, len(entries)):
+                                id = int(entries[idx])
                                 location = self.rainGaugeLocations[id]
 
                                 recording = Recording(location, startTime, endTime, 

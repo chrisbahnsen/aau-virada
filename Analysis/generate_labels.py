@@ -93,7 +93,7 @@ def getGaugeValues(gaugeFilePath, startDateTime, lat, long, FPS, numFrames, hour
     FPM = FPS * 60
 
     if startSeconds > 0:
-        frameOffset = (60 - startSeconds) * FPS - 15
+        frameOffset = (60 - startSeconds) * FPS - int(FPS/2)
     else:
         frameOffset = 0
         

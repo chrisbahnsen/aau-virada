@@ -37,7 +37,7 @@ def Crossing1Files(fileName, ind=None):
         ind: Indicator of whether it is the left or right crop of the video which is wanted. Optional
 
     Output:
-        datetime: String of the format  YYYY-MM-DD hh:mm:ss
+        datetime: String of the format  DD-MM-YYYY hh:mm:ss
     """
 
     date = fileName[:8]
@@ -67,7 +67,7 @@ def Crossing2Files(fileName):
         fileName: Name of the file
 
     Output:
-        datetime: String of the format  YYYY-MM-DD hh:mm:ss
+        datetime: String of the format  DD-MM-YYYY hh:mm:ss
     """
     dateTimeStr = fileName.split('-')
 
@@ -76,10 +76,14 @@ def Crossing2Files(fileName):
         month = int(dateTimeStr[0])
         day = int(dateTimeStr[1])
         hour = int(dateTimeStr[2])
-        minute = 0
-        sec = 0
+        if type(dateTimeStr[3]) == int:
+            minute = int(dateTimeStr[3])
+            sec = int(dateTimeStr[4])
+        else:
+            minute = 0
+            sec = 0
 
-        dateTime = "{}-{}-{} {}:{}:{}".format(year, month, day, hour, minute, sec)
+        dateTime = "{}-{}-{} {:02d}:{:02d}:{:02d}".format(day, month, year, hour, minute, sec)
         return dateTime
     else:
         return None
