@@ -76,7 +76,7 @@ def Crossing2Files(fileName):
         month = int(dateTimeStr[0])
         day = int(dateTimeStr[1])
         hour = int(dateTimeStr[2])
-        if type(dateTimeStr[3]) == int:
+        if dateTimeStr[3].isdigit():
             minute = int(dateTimeStr[3])
             sec = int(dateTimeStr[4])
         else:
